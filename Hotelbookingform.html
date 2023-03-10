@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Semantic HTML5 Elements</HTML:5></title>
+        <meta name="description" content="This is what Google willnshow!">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div style="color: greenyellow; background-color: beige;">
+        <form action="destination.html" method="GET">
+            <fieldset>
+                <legend>Personal Details: </legend>
+                <label for="name">Username:</label><input type="text" name="username" id="name" required autofocus placeholder="Your Username" pattern="[a-zA-Z]{3,}" title="Please enter in more than three letters">
+                <label for="email">Email:</label><input type="text" name="email" id="email" required placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="please enter in a valid mail address">
+                <label for="phone">Phone</label><input type="tel" name="phone" id="phone" required placeholder="please enter in your phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="please enter in a phone number in this format #### ### ####">
+                <select name="country" required>
+                    <option value=""> </option>
+                    <option value="US">US</option>
+                    <option value="UK">UK</option>
+                    <option value="GERMANY">GERMANY</option>
+                    <option value="NIGERIA">NIGERIA</option>
+                </select>
+            </fieldset>
+        </div>
+            <br>
+            <div style="color: violet; background-color: blue;">
+            <fieldset>
+                <legend>Booking Details: </legend>
+                <label for="date">Booking date: </label><input id="date" type="date" name="date" min="2023-03-6">
+                <label for="numberofguests">Number Of Guests: </label><input id="numberofguests" type="number" name="number of guests" min="2" max="4">
+                <p>Do you require meals</p>
+                <label for="yesmeals">Yes: </label><input id="yesmeals" type="radio" name="meals" value="yesmeals">
+                <label for="nomeals">NO: </label><input id="nomeals" type="radio" name="meals" value="nomeals">
+                <br>
+                <p>Do you require a balcony</p>
+                <label for="yesbalcony">Yes: </label><input id="yesbalcony" type="checkbox" name="balcony" value="yesbalcony" checked>
+                <label for="nobalcony">No: </label><input id="nobalcony" type="checkbox" name="balcony" value="nobalcony" checked>
+            </div>
+                <br>
+                <input type="image" src="./images/button.jpg" alt="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
